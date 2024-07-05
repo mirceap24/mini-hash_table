@@ -1,3 +1,7 @@
+#define HT_PRIME_1 151
+#define HT_PRIME_2 163
+
+
 // single key-value pair
 typedef struct {
     char* key; 
