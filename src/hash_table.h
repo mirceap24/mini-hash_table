@@ -1,5 +1,6 @@
 #define HT_PRIME_1 151
 #define HT_PRIME_2 163
+#define HT_INITIAL_BASE_SIZE 53
 
 
 // single key-value pair
@@ -9,6 +10,7 @@ typedef struct {
 } ht_item; 
 
 typedef struct {
+    int base_size;
     int size; // total number of buckets
     int count; // number of items currently stored
     ht_item** items; // pointer to an array of pointers to `ht_item` structures
